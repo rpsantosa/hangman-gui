@@ -2,7 +2,11 @@
 
 Um jogo da forca interativo com interface gráfica construído em Python e Tkinter.
 
-## 📋 Características
+## � Preview
+
+![Hangman Game Screenshot](assets/game_screenshot.png)
+
+## �📋 Características
 
 - 🎨 Interface gráfica colorida e intuitiva
 - 📊 Sistema de pontuação e estatísticas
