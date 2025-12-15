@@ -1,58 +1,138 @@
-# Hangman GUI Game
+# Hangman GUI Game 🎮
 
-This project is a graphical user interface (GUI) implementation of the classic Hangman game. It is designed to be user-friendly and engaging for players of all ages.
+Um jogo da forca interativo com interface gráfica construído em Python e Tkinter. Perfeito para ensinar programação a crianças!
 
-## Project Structure
+## 📋 Características
+
+- 🎨 Interface gráfica colorida e intuitiva
+- 📊 Sistema de pontuação e estatísticas
+- 💾 Salvar e carregar jogos
+- 📚 Versão educacional em Jupyter Notebook
+- 🏆 Níveis de dificuldade
+- 🎯 Feedback visual imediato
+
+## 🗂️ Estrutura do Projeto
 
 ```
 hangman-gui
 ├── src
-│   ├── main.py               # Entry point of the application
+│   ├── __init__.py           # Marca src como pacote Python
+│   ├── main.py               # Ponto de entrada da aplicação
 │   ├── game
-│   │   ├── __init__.py       # Initializes game-related modules
-│   │   ├── engine.py         # Contains the GameEngine class for game logic
-│   │   └── words.py          # Provides a list of words for the game
+│   │   ├── __init__.py       # Módulos relacionados ao jogo
+│   │   ├── engine.py         # Lógica principal do jogo
+│   │   └── words.py          # Base de palavras
 │   ├── ui
-│   │   ├── __init__.py       # Initializes UI-related modules
-│   │   ├── app.py            # Main application window class
-│   │   └── components.py      # Defines UI components
+│   │   ├── __init__.py       # Módulos da interface
+│   │   ├── app.py            # Janela principal da aplicação
+│   │   └── components.py     # Componentes visuais
 │   └── services
-│       └── state_manager.py   # Manages application state
+│       └── state_manager.py  # Gerenciador de estado do jogo
+├── notebooks
+│   └── hangman_tutorial.ipynb # Tutorial interativo para crianças
 ├── tests
-│   └── test_game.py          # Unit tests for game logic
-├── requirements.txt           # Lists project dependencies
-├── pyproject.toml            # Project configuration file
-└── README.md                  # Project documentation
+│   └── test_game.py          # Testes unitários
+├── requirements.txt           # Dependências do projeto
+├── pyproject.toml            # Configuração do projeto
+├── .gitignore                # Arquivos ignorados pelo Git
+└── README.md                 # Documentação
 ```
 
-## Setup Instructions
+## 🚀 Instalação
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd hangman-gui
-   ```
+### Opção 1: Usando Conda (Recomendado)
 
-2. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+```bash
+# Clone o repositório
+git clone git@github.com:rpsantosa/hangman-gui.git
+cd hangman-gui
 
-3. Run the application:
-   ```
-   python -m src.main
-   ```
+# Crie o ambiente virtual
+conda create --name jogos python=3.11
+conda activate jogos
 
-## Usage Guidelines
+# Instale as dependências
+pip install -r requirements.txt
+```
 
-- Upon starting the application, players will be presented with a user-friendly interface to start the game.`
-- Players can input their guesses through the provided input fields and will receive immediate feedback on their progress.
-- The game tracks the number of incorrect guesses and displays the current state of the word being guessed.
+### Opção 2: Usando venv
 
-## Contributing
+```bash
+# Clone o repositório
+git clone git@github.com:rpsantosa/hangman-gui.git
+cd hangman-gui
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+# Crie o ambiente virtual
+python3 -m venv jogos
+source jogos/bin/activate  # No Windows: jogos\Scripts\activate
 
-## License
+# Instale as dependências
+pip install -r requirements.txt
+```
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## 🎮 Como Usar
+
+### Executar a Aplicação GUI
+
+```bash
+python -m src.main
+```
+
+### Executar o Notebook Educacional
+
+```bash
+jupyter notebook notebooks/hangman_tutorial.ipynb
+```
+
+Ou abra no VS Code com a extensão Jupyter.
+
+## 🎯 Funcionalidades
+
+- **Jogar**: Adivinhe a palavra letra por letra
+- **Salvar Jogo**: Salve seu progresso a qualquer momento
+- **Carregar Jogo**: Continue de onde parou
+- **Estatísticas**: Veja seu desempenho (vitórias, derrotas, taxa de acerto)
+- **Modo Tutorial**: Aprenda programação enquanto joga!
+
+## 🧪 Executar Testes
+
+```bash
+pytest tests/
+```
+
+## 📚 Para Educadores
+
+O notebook `hangman_tutorial.ipynb` foi desenvolvido especificamente para ensinar Python a crianças através de:
+
+- ✅ Conceitos progressivos (variáveis → funções → classes)
+- ✅ Exemplos visuais e interativos
+- ✅ Desafios práticos
+- ✅ Interface colorida e amigável
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/NovaFeature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/NovaFeature`)
+5. Abra um Pull Request
+
+## 📝 Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 👥 Autor
+
+**Ricardo Santosa** - [@rpsantosa](https://github.com/rpsantosa)
+
+## 🙏 Agradecimentos
+
+- Comunidade Python
+- GitHub Copilot
+- Todos os contribuidores
+
+---
+
+⭐ Se este projeto te ajudou, considere dar uma estrela!
