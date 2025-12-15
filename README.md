@@ -1,6 +1,6 @@
 # Hangman GUI Game 🎮
 
-Um jogo da forca interativo com interface gráfica construído em Python e Tkinter. Perfeito para ensinar programação a crianças!
+Um jogo da forca interativo com interface gráfica construído em Python e Tkinter.
 
 ## 📋 Características
 
@@ -130,7 +130,7 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para 
 ## 🙏 Agradecimentos
 
 - Comunidade Python
-- GitHub Copilot
+- Serrano
 - Todos os contribuidores
 
 ---
